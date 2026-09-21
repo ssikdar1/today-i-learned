@@ -11,9 +11,9 @@ This document contains some notes and observations on this topic.
 
 In English we often turn nouns into verbs in English by adding verb endings to it. E.g. `Googl-ing`, `Uber-ed`, etc. 
 
-Bengali and Hindi also create new verbs with nouns.
+The same can be done for Hindi.
 
-Trying to write this in a Backus–Naur style formula I get
+Trying to formalize this in a Backus–Naur style inspired formula I get
 
 ```
     NEW_VERB :== <NOUN> + <HINDI_VERB>
@@ -25,11 +25,24 @@ Trying to write this in a Backus–Naur style formula I get
 So for example:
 
 काम - (kaam) - is the hindi noun for `work`.
+
 करना - (karna) - the verb `to do`.
 
-so `काम` + `करना`  produces `काम करना` the verb `to work`.
+so `काम` + `करना`  produces `काम करना` the verb `to work`. You can then conjugate and use `काम करना` as a verb by simply conjugating the verb `करना` part as you normally would. 
 
-This grammar point in Hindi is often called `compound verbs` in Hindi textbooks.
+So if the past participle of `करना` is `किया` like in the sentence
+
+```
+मैंने यह कल किया।  - I did it yesterday
+```
+
+Then the past participle of `काम करना` is just `काम किया`.
+
+```
+मैंने कल काम किया। - did the work yesterday
+```
+
+This grammar point in Hindi is often classified as `compound verbs` in Hindi textbooks.
 
 There are certain rules as to which Hindi verbs you can use for `HINDI_VERB` in the formula above. In general the most often used verbs are करना (to do) and होना (to be).
 

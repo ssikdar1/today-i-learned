@@ -28,8 +28,9 @@ So for example:
 
 करना - (karna) - the verb `to do`.
 
-so `काम` + `करना`  produces `काम करना` the verb `to work`. You can then conjugate and use `काम करना` as a verb by simply conjugating the verb `करना` part as you normally would. 
+so `काम` + `करना`  produces the verb `काम करना` which means `to work`. 
 
+You can then conjugate and use `काम करना` as a verb by simply conjugating the `करना` part as you normally would. 
 So if the past participle of `करना` is `किया` like in the sentence
 
 ```

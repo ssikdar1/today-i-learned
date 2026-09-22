@@ -64,3 +64,5 @@ The words from English, Farsi, etc are called `loanwords`.
 Below is a running list of Hinglish Compound verbs where the noun is a loanword from English:
 
 * `use` करना - can be used in place of इस्तेमाल करना. Interestingly इस्तेमाल is also a load word from Arabic. The original Sanskrit derived word `उपयोग` can also be used उपयोग करना ( 9/21/2025 )
+* `order करना` - If you look up in a dictionary the true verb to order is `मँगवाना`. However you often see and here order karna like in this video title about blinkit [how to order from blinkit | blinkit se order kaise kare | blinkit app kaise use kare] (https://www.youtube.com/watch?v=P-XtmE_5Gsw) (9/22/2025)
+* `audition करना` - Found in this youtube short [here](https://www.youtube.com/shorts/bTaOWXfO_Zo)  (9/22/2025)

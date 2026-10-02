@@ -1,6 +1,9 @@
-# Background
+# Pytorching Fizz Buzz
 
-Quick Aside: The Astoria Tech meetup does 5 minute lightning rounds every month. I really don't have anything to present so I came up with this dumb thing so that I could have something to present next month. Enjoy!
+The Astoria Tech meetup does 5 minute lightning rounds every month. I really don't have anything to present so I came up with this dumb thing so that I could have something to present next month. Enjoy!
+
+
+## Academic Background
 
 With the recent AI hype the past two years and ML hype the past 10 years it's often easy to forget that some of the techniques go way back.
 
@@ -8,7 +11,7 @@ In fact some of the most basic concepts go back all the way to the 50's and 60's
 
 Take the perception, one of the simplest types of nueral networks. The concept of a "neuron" and "network" was formed in 1943 with simulations happening by the late 50's. ([source](https://en.wikipedia.org/wiki/Perceptron)).
 
-# A Single Layer Network
+## A Single Layer Network
 
 Deep diving into the architecture we can grossily simplfy the architecture for a problem with to inputs to:
 
@@ -37,9 +40,9 @@ x ----> | fizz_buzz |   - - - - - > output
         |-----------
 ```
 
-# Pytorching Fizz Buzz
+## Torching the Buzz
 
-## Quick Review of Fizz Buzz
+### Quick Review of Fizz Buzz
 
 Leet code defines fizzbuzz problem as the following:
 
@@ -65,7 +68,7 @@ for i in range(1, 101):
         print(i)
 ```
 
-## Pytorch
+### Pytorch
 
 The code can be found at `fizz_buzz_torch.py` but it's small enough to paste here.
 
@@ -119,7 +122,7 @@ Fizz
 FizzBuzz
 ```
 
-## Notes & Observations
+# Notes & Observations
 
 * There's no back propogation in this, so this is just a really dumb feed forward network.
 * `torch.nn.Module` can turn a python class into a pytorch neural net.

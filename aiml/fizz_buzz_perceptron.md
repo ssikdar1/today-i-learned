@@ -15,15 +15,16 @@ Deep diving into the architecture of specific neuron in a neural network, we can
 
 ```
 x_1 \
-         \
-          \  
-             _ _ __ _ _ _ _ 
+     \
+      \  
+        \    _ _ __ _ _ _ _ 
 ...         |               |
             |     f         | - - - - > output
             | _ _ __ _ _ _ _|
-          /
-         /
-x_n /
+           /
+        / 
+       /
+x_n 
 ```
 
 Where x are inputs and typically the black box involves a fancy function ( e.g sigmoid ).

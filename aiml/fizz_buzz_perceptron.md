@@ -125,6 +125,7 @@ FizzBuzz
 
 * There's no back propogation in this, so this is just a really dumb feed forward network.
 * `torch.nn.Module` can turn a python class into a pytorch neural net.
+* `model(i)` implicitly calls `forward`. This is probably how in the real world you would use your model to produce predictions.
 * For the constructor I've noticed that you need to call `super` to instatiate torch configuration. For some reason I see two ways:
 ```
 super().__init__()

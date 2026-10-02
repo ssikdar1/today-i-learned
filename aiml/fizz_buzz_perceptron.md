@@ -163,7 +163,7 @@ TODO: whats the difference between a*b, a@b and torch.matmul?
 * I often find myself overwhelemed when trying to learn machine learning. This example reminds me that the libraries themseleves need not be scary and there's always a simple place to start.
 
 # Links
-I tried as hard to not use AI and instead find links to base my answers off of.
+I tried hard to not use AI and instead find links to base my answers off of.
 The following are the links I used for references.
 
 https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html

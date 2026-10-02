@@ -14,24 +14,38 @@ Take the perception for example, one of the simplest types of nueral networks. T
 Deep diving into the architecture of specific neuron in a neural network, we can simplfy the architecture to:
 
 ```
-x_1 \
+x_0 \
      \
-      \  
+      \ w_1 
         \    _ _ __ _ _ _ _ 
 ...         |               |
             |     f         | - - - - > output
             | _ _ __ _ _ _ _|
            /
-        / 
-       /
+         / w_n
+        /
 x_n 
 ```
 
-Where x are inputs and typically the black box involves a fancy function ( e.g sigmoid ).
+Basically take your inputs x_0 to x_n, multiply them by a weights w_0 to w_n and put them in a fancy function. Or as wikipedia writes in vector notation:
 
-However, it recently occured to me though this function could probably be implemented to be any find of function.
+f(x) = h ( w * x + b).
 
-So could we then just have one element as an input and then implement f to be simply fizz buzz?
+( b is just a small bias factor. I'm going to ignore it for now. )
+[source](https://en.wikipedia.org/wiki/Perceptron)
+
+Now the fancy function inside that box I rew is usually a function like sigmoid.
+
+However, it recently occured to me though this function could probably be implemented to be any find of function I want in practice.
+
+So then I had the dumb idea what if we:
+
+1. Limit all x to be just one input of a single number.
+2. Set the corresponding weight for this one input to just be 1.
+3. Make f just be an implementation of fizzbuzz.
+
+Could I then implement fizz buzz in pytorch?
+
 
 ```
          -----------
@@ -53,7 +67,7 @@ answer[i] == "Buzz" if i is divisible by 5.
 answer[i] == i (as a string) if none of the above conditions are true.
 ```
 
-Gemini which refuses shut up and insists on giving me AI anwers to every google search I do, kindly drained water from Lake Tahoe to provide the following solution for fizz buzz in Python.
+Gemini which gives me AI anwers to every google search I do, kindly drained water from Lake Tahoe to provide the following solution for fizz buzz in Python.
 
 ```
 for i in range(1, 101):
@@ -73,30 +87,33 @@ My implementation can be found at `fizz_buzz_torch.py` but it's small enough to 
 
 ```{python}
 
-import torch
-
-class FizzBuzzPerceptron(torch.nn.Module):
-    def __init__(self):
-        super(FizzBuzzPerceptron, self).__init__()
-
-    def _fizz_buzz(self, i):
-        if i % 3 == 0 and i % 5 == 0:
-            return "FizzBuzz"
-        elif i % 3 == 0:
-            return "Fizz"
-        elif i % 5 == 0:
-            return "Buzz"
-        else:
-            return i
-
-    def forward(self, x):
-        return self._fizz_buzz(x)
-
-model = FizzBuzzPerceptron()
-print(model)
-for i in range(1, 16):
-    out = model(i)
-    print(out)
+  3 import torch
+  4 from torch import tensor
+  5 
+  6 class FizzBuzzPerceptron(torch.nn.Module):
+  7     def __init__(self):
+  8         super(FizzBuzzPerceptron, self).__init__()
+  9 
+ 10     def _fizz_buzz(self, i):
+ 11         if i % 3 == tensor([0]) and i % 5 == tensor([0]):
+ 12             return "FizzBuzz"
+ 13         elif i % 3 == tensor([0]):
+ 14             return "Fizz"
+ 15         elif i % 5 == tensor([0]):
+ 16             return "Buzz"
+ 17         else:
+ 18             return i
+ 19 
+ 20     def forward(self, x):
+ 21         w = tensor(1)
+ 22         return self._fizz_buzz(x * w)
+ 23 
+ 24 model = FizzBuzzPerceptron()
+ 25 model.train()
+ 26 print(model)
+ 27 for i in range(1, 16):
+ 28     out = model(tensor(i))
+ 29     print(out)
 
 ```
 
@@ -104,21 +121,22 @@ And running the code produces:
 ```
 $ python fizz_buzz_torch.py 
 FizzBuzzPerceptron()
-1
-2
+tensor(1)
+tensor(2)
 Fizz
-4
+tensor(4)
 Buzz
 Fizz
-7
-8
+tensor(7)
+tensor(8)
 Fizz
 Buzz
-11
+tensor(11)
 Fizz
-13
-14
+tensor(13)
+tensor(14)
 FizzBuzz
+
 ```
 
 # Notes & Observations
@@ -130,8 +148,11 @@ FizzBuzz
 ```
 super().__init__()
 super(SimpleModel, self).__init__()
-```
+```                       
 I'm blanking if there's a difference in behavior between the two.
+
+* torch.tensor(i) could have just been an `int` I just wanted to try playing around with tensors. 
+TODO: whats the difference between a*b, a@b and torch.matmul?
 
 * I later added a `model.train()` line but nothing changed. I need to learn more on what this function does.
 

@@ -11,7 +11,7 @@ Take the perception for example, one of the simplest types of nueral networks. T
 
 ## A Single Layer Network
 
-Deep diving into the architecture of a neural network, we can grossily simplfy the architecture to:
+Deep diving into the architecture of specific neuron in a neural network, we can simplfy the architecture to:
 
 ```
 x_1 \
@@ -26,7 +26,7 @@ x_1 \
 x_n /
 ```
 
-Where x are your inputs and typically the black box involves a fancy function ( e.g sigmoid ).
+Where x are inputs and typically the black box involves a fancy function ( e.g sigmoid ).
 
 However, it recently occured to me though this function could probably implemented to be any find of function.
 

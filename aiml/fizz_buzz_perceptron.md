@@ -34,7 +34,7 @@ f(x) = h ( w * x + b).
 ( b is just a small bias factor. I'm going to ignore it for now. )
 [source](https://en.wikipedia.org/wiki/Perceptron)
 
-Now the fancy function inside that box I rew is usually a function like sigmoid.
+The fancy function inside that box I drew is usually a function like sigmoid.
 
 However, it recently occured to me though this function could probably be implemented to be any find of function I want in practice.
 

@@ -1,6 +1,6 @@
 # Pytorching Fizz Buzz
 
-The Astoria Tech meetup does 5 minute lightning rounds every month. I really don't have anything to present so I came up with this dumb thing so that I could have something to present next month. Enjoy!
+The Astoria Tech meetup does 5 minute lightning rounds every month. I really don't have anything to present so I came up with this dumb thing so that I could have something to present next month to practice public speaking. Enjoy!
 
 
 ## Academic Background
@@ -33,9 +33,9 @@ However, it recently occured to me though this function could probably implement
 So could we then just have one element as an input and then implement f to be simply fizz buzz?
 
 ```
-        |------------
+         -----------
 x ----> | fizz_buzz |   - - - - - > output 
-        |-----------
+         -----------
 ```
 
 ## Torching the Buzz
@@ -68,7 +68,7 @@ for i in range(1, 101):
 
 ### Pytorch
 
-The code can be found at `fizz_buzz_torch.py` but it's small enough to paste here.
+The code can be found at `fizz_buzz_torch.py` but it's small enough to copy-paste here.
 
 ```{python}
 

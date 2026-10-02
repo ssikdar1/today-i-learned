@@ -12,6 +12,7 @@ Take the perception, one of the simplest types of nueral networks. The concept o
 
 Deep diving into the architecture we can grossily simplfy the architecture for a problem with to inputs to:
 
+```
 x 1 \
          \
           \  
@@ -22,6 +23,7 @@ x 1 \
           /
          /
 x n /
+```
 
 Where typically the black box involves a fancy function ( e.g sigmoid ).
 
@@ -29,10 +31,11 @@ It recently occured to me though this function could probably be anything in imp
 
 So could we then just have one element as an input and then implement f to be simply fizz buzz?
 
+```
         |------------
 x ----> | fizz_buzz |   - - - - - > output 
         |-----------
-
+```
 
 # Pytorching Fizz Buzz
 

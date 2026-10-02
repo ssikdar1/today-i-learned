@@ -163,7 +163,7 @@ TODO: whats the difference between a*b, a@b and torch.matmul?
 
 # Links
 I tried as hard to not use AI and instead find links to base my answers off of.
-The following where the links I used for references.
+The following are the links I used for references.
 
 https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html
 

@@ -151,7 +151,8 @@ super(SimpleModel, self).__init__()
 ```                       
 I'm blanking if there's a difference in behavior between the two.
 
-* torch.tensor(i) could have just been an `int` I just wanted to try playing around with tensors. 
+* torch.tensor(i) could have just been an `int` I just wanted to try playing around with tensors.
+Technically a scalar is a tensor of type (0,0) ! See: [Tensor Examples](https://en.wikipedia.org/wiki/Tensor#Examples)
 TODO: whats the difference between a*b, a@b and torch.matmul?
 
 * I later added a `model.train()` line but nothing changed. I need to learn more on what this function does.

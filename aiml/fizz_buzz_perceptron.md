@@ -5,18 +5,16 @@ The Astoria Tech meetup does 5 minute lightning rounds every month. I really don
 
 ## Academic Background
 
-With the recent AI hype the past two years and ML hype the past 10 years it's often easy to forget that some of the techniques go way back.
+With the recent AI hype the past few years it's often easy to forget that some of the techniques we use in AI/ML go way back to the 50's and 60's.
 
-In fact some of the most basic concepts go back all the way to the 50's and 60's!
-
-Take the perception, one of the simplest types of nueral networks. The concept of a "neuron" and "network" was formed in 1943 with simulations happening by the late 50's. ([source](https://en.wikipedia.org/wiki/Perceptron)).
+Take the perception for example, one of the simplest types of nueral networks. The concept of a "neuron" and "network" was formed in 1943 with actual simulations happening by the late 50's. ([source](https://en.wikipedia.org/wiki/Perceptron)).
 
 ## A Single Layer Network
 
-Deep diving into the architecture we can grossily simplfy the architecture for a problem with to inputs to:
+Deep diving into the architecture of a neural network, we can grossily simplfy the architecture to:
 
 ```
-x 1 \
+x_1 \
          \
           \  
              _ _ __ _ _ _ _ 
@@ -25,12 +23,12 @@ x 1 \
             | _ _ __ _ _ _ _|
           /
          /
-x n /
+x_n /
 ```
 
-Where typically the black box involves a fancy function ( e.g sigmoid ).
+Where x are your inputs and typically the black box involves a fancy function ( e.g sigmoid ).
 
-It recently occured to me though this function could probably be anything in implementation. 
+However, it recently occured to me though this function could probably implemented to be any find of function.
 
 So could we then just have one element as an input and then implement f to be simply fizz buzz?
 

@@ -29,7 +29,7 @@ x_n
 
 Where x are inputs and typically the black box involves a fancy function ( e.g sigmoid ).
 
-However, it recently occured to me though this function could probably implemented to be any find of function.
+However, it recently occured to me though this function could probably be implemented to be any find of function.
 
 So could we then just have one element as an input and then implement f to be simply fizz buzz?
 

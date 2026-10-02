@@ -69,7 +69,7 @@ for i in range(1, 101):
 
 ### Pytorch
 
-The code can be found at `fizz_buzz_torch.py` but it's small enough to copy-paste here.
+My implementation can be found at `fizz_buzz_torch.py` but it's small enough to copy-paste here.
 
 ```{python}
 

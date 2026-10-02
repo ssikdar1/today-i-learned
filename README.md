@@ -10,6 +10,8 @@ In my spare time I like to learn foriegn languages ( hindi, bengali, japaneese )
 
 ## Technical
 
+### AI ML
+* Implementing Fizz Buzz with Pytorch. (10/01/2025)
 
 ## Non Technical
 

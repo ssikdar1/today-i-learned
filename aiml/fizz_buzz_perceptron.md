@@ -53,7 +53,7 @@ answer[i] == "Buzz" if i is divisible by 5.
 answer[i] == i (as a string) if none of the above conditions are true.
 ```
 
-Gemini which refuses shut the fuck up and insists on giving me AI anwers to every google search I do, kindly drained water from Lake Tahoe to provide the following solution for fizz buzz in Python.
+Gemini which refuses shut up and insists on giving me AI anwers to every google search I do, kindly drained water from Lake Tahoe to provide the following solution for fizz buzz in Python.
 
 ```
 for i in range(1, 101):
@@ -136,7 +136,9 @@ I'm blanking if there's a difference in behavior between the two.
 * I later added a `model.train()` line but nothing changed. I need to learn more on what this function does.
 
 # Why?
-I wanted to learn how to use the pytorch library. While this isn't really machine learning or AI in anyway it was actually not a bad hello world for getting something setup.
+* I wanted to learn how to use the pytorch library. While this isn't really machine learning or AI in anyway it was actually not a bad hello world for getting something setup.
+
+* I often find myself overwhelemed when trying to learn machine learning. This example reminds me that the libraries themseleves need not be scary and there's always a simple place to start.
 
 # Links
 I tried as hard to not use AI and instead find links to base my answers off of.

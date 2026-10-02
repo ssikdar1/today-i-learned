@@ -1,5 +1,7 @@
 # Background
 
+Quick Aside: The Astoria Tech meetup does 5 minute lightning rounds every month. I really don't have anything to present so I came up with this dumb thing so that I could have something to present next month. Enjoy!
+
 With the recent AI hype the past two years and ML hype the past 10 years it's often easy to forget that some of the techniques go way back.
 
 In fact some of the most basic concepts go back all the way to the 50's and 60's!

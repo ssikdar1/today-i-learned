@@ -8,9 +8,7 @@ When looking at a line of text. (e.g. `hello world`) while we humans in terms of
 
 ## English difficulty mode: Easy
 
-Coding in English all day we take for granted how straight forward english text can be.
-
-So let's take the following rust code. 
+So let's take the following rust code. And look at how it behaves with the English phrase `hello world`.
 
 The program is simply doing the following:
 * Take an input argument string. Print the string, bytes, and length of the array of bytes.

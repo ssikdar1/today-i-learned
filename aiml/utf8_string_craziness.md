@@ -1,23 +1,25 @@
 # UTF8 String Craziness
 
-While brainstorming about creating a rust program to implement Byte Pair Encoding, I was reminded just how strange and unintuitive text can be, especially in other languages. I will get to actually implementing BPE at some other date but wanted to document some rediscoveries.
+While brainstorming about creating a rust program to implement Byte Pair Encoding, I was reminded just how strange and unintuitive text can be, especially in other languages. I will get to actually implementing BPE at some other date but wanted to document some discoveries.
+
+## Quick Recap
+
+When looking at a line of text. (e.g. `hello world`) while we humans in terms of letters `h`, `e`, ... computers actually think of text in terms of numbers. Specifically Rust's `String` type thinks in terms of numbers in utf-8 encoding that maps to symbols in the [Unicode Standard](https://en.wikipedia.org/wiki/List_of_Unicode_characters).
 
 ## English difficulty mode: Easy
 
 Coding in English all day we take for granted how straight forward english text can be.
 
-For Example: Let's take the following rust code. 
-
-We know the while we think in terms of letters, computers actually think of text in terms of numbers. Specifically Rust's `String` type thinks in terms of numbers in utf-8 encoding that maps numbers to symbols in the [Unicode Standard](https://en.wikipedia.org/wiki/List_of_Unicode_characters).
+So let's take the following rust code. 
 
 The program is simply doing the following:
-* Take an input argument string. Print the string, bytes, and length of the string.
+* Take an input argument string. Print the string, bytes, and length of the array of bytes.
 * Iterate through each character of the string. For each character:
     * print the character
     * print the character encoded as utf8
     * print that encoded utf8's bytes
     * print the hex value of the utf8
-    * print how many times it looped through the characters.
+    * print how many times it looped through the characters. ( aka how many characters are in my string )
 
 ```{rust}
   1 use std::env;
@@ -48,7 +50,7 @@ The program is simply doing the following:
  26     println!("ctr: {}", ctr);
 ```
 
-and lets look at its output of the program with the string `Hello World`.
+lets look at its output of the program with the string `Hello World`:
 
 ```
 $ ./bpe "hello world"
@@ -69,7 +71,7 @@ character: d	as u32: 100	encoded: d	encoded as bytes: [100] 	UTF-8 bytes hex: 64
 ctr: 11
 ```
 
-As we can see its pretty boring. Each character correspondes to a byte in the array. There are 11 letters and 11 bytes.
+As we can see the output is pretty boring. There are 11 letters and 11 bytes in the array. Each character correspondes to a byte in the array. 
 
 ## Et en Francais?
 
@@ -113,7 +115,7 @@ ctr: 28
 
 Things immediately have gotten a little weirder. There are only 28 letters and yet the byte buffer as 32 entries!
 
-With english we got lucky since the code points of all english characters in the Unicode Standard can be fit within one byte. However in French with the `é` we've gotten unlucky. Each `é` is represented by C3 A9 and needed two bytes to fit that information.
+With english we got lucky since the code points of all english characters in the Unicode Standard can be fit within one byte. However in French with the `é` we've gotten unlucky. Each `é` is represented by C3 A9 and therfore needsZ two bytes to fit that information.
 
 ## Now in Hindi
 

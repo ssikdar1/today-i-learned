@@ -111,7 +111,7 @@ character: é	as u32: 233	encoded: é	encoded as bytes: [195, 169] 	UTF-8 bytes 
 ctr: 28
 ```
 
-Things immediately have gotten a little weirder. There are only 28 letters and yet the byte buffer as 32 entries!
+Things immediately have gotten a little weirder. There are only 28 letters and yet the byte buffer has 32 entries!
 
 With english we got lucky since the code points of all english characters in the Unicode Standard can be fit within one byte. However in French with the `é` we've gotten unlucky. Each `é` is represented by C3 A9 and therfore needsZ two bytes to fit that information.
 

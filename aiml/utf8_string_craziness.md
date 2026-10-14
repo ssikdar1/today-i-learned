@@ -8,7 +8,7 @@ When looking at a line of text. (e.g. `hello world`) while we humans in terms of
 
 ## English difficulty mode: Easy
 
-So let's take the following rust code. And look at how it behaves with the English input.
+So let's take the following rust code and look at how it behaves with  English input.
 
 The program is simply doing the following:
 * Take an input argument string. Print the string, bytes, and length of the array of bytes.
@@ -141,7 +141,7 @@ ctr: 11
 Here we see an even greater disparity between the number of letters present in the string and the length of the buffer! 
 Every single character takes up 3 bytes. 
 
-Reading through documentation for [encode_utf8](https://doc.rust-lang.org/std/primitive.char.html) we see that 4 bytes is the max a character can have.
+Reading through documentation for [encode_utf8](https://doc.rust-lang.org/std/primitive.char.html) we see that 4 bytes is the max any character can have.
 
 ## Conclusion and Notes
 In conclusion Strings can be more intuitive than they appear in first glance! There are many other odd quirks when working in different languages but I'm blanking on them now. A few other issues that come up are:

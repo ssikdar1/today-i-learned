@@ -11,8 +11,9 @@ In my spare time I like to learn foriegn languages ( hindi, bengali, japaneese )
 ## Technical
 
 ### AI ML
-* [Implementing Fizz Buzz with Pytorch.](aiml/fizz_buzz_perceptron.md) (10/01/2025)
-* [Notes on utf8 strings in other languages](aiml/utf8_string_craziness.md) (10/13/2025)
+* [Implementing Fizz Buzz with Pytorch.](aiml/fizz_buzz_perceptron.md) (10/01/2026)
+* [Notes on utf8 strings in other languages](aiml/utf8_string_craziness.md) (10/13/2026)
+* [Implementing a Neural Network to predict Forest Fires](aiml/revisiting_forest_fire_NN.md) (11/1/2026)
 
 ## Non Technical
 

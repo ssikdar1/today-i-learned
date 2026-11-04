@@ -1,8 +1,8 @@
 # Introduction
 
-Recently while cleaning I discovered a pdf of a final paper for a Soft Computing class I took in the Industrial and Systems Engineering school at SUNY Binghamton (ISE 419). Graduating as a mathematics major while still in the midst of the recession unsure of job prospects, I took a bunch of software and engineering classes in different departments with hope I woul d be able to tie my math education to something more tangible.
+I recently rediscovered a final paper for a Soft Computing class (ISE 419) I took in the Industrial and Systems Engineering school at SUNY Binghamton. Graduating as a mathematics major in the midst of the recession was a time uncertain of job prospects. As a result I took a bunch of software and engineering classes with the hope I would be able to tie my math education to something more tangible.
 
-It was such an interesting time, my programming knowledge was limited to introductory Python and Java. I belive this was the first time I tried to take something that was presented mathematically in class and try to actually implement it in actual code. At this point it hadn't occured to me that you could use libraries for coding projects so I implemented everything with just raw python lists. I don't seem to have the actual code anymore but I pasted portions of the code in the final write up, proabably to make the report seem longer.
+Then my programming knowledge was limited to introductory Python and Java. I belive this was the first time I tried to take something that was presented mathematically in class and try to actually implement it in actual code. At this point it hadn't occured to me that you could use libraries for coding projects so I implemented everything with just raw python lists. I don't seem to have the actual code anymore but I pasted portions of the code in the final write up  (proabably to make the paper seem longer).
 
 The paper was titled "Feed Forward Back Propogation Neural Network" ( nowadays we would just call that a normal nueral network I think). It used a dataset on entries of wildfires in Portugal ([link](https://archive.ics.uci.edu/dataset/162/forest+fires)). 
 The task was given 12 Integer, Categorical and Continuous variables, predict the amount of forest burned in that fire.
@@ -12,6 +12,8 @@ The task was given 12 Integer, Categorical and Continuous variables, predict the
 In a previous post I used pytorch to implement (fizz buzz)[fizz_buzz_perceptron.md]. 
 That was useful in showing some of the basic module class and methods, but it didn't really do much. 
 This time around I thought it would be interesting to retry my final paper by implementing it in pytorch.
+
+This will involve both feed forawrd and backpropgation elements as well as feature engineering.
 
 The final code I ended up using is at (forest_fire.py)[forest_fire.py].
 

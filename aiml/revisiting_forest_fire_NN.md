@@ -9,7 +9,7 @@ The task was given 12 Integer, Categorical and Continuous variables, predict the
 
 ## Task
 
-In a previous post I used pytorch to implement (fizz buzz)[fizz_buzz_perceptron.md]. 
+In a previous post I used pytorch to implement [fizz buzz](fizz_buzz_perceptron.md). 
 That was useful in showing some of the basic module class and methods, but it didn't really do much. 
 This time around I thought it would be interesting to retry my final paper by implementing it in pytorch.
 

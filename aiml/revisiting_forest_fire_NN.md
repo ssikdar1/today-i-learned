@@ -15,7 +15,7 @@ This time around I thought it would be interesting to retry my final paper by im
 
 This will involve both feed forawrd and backpropgation elements as well as feature engineering.
 
-The final code I ended up using is at (forest_fire.py)[forest_fire.py].
+The final code I ended up using is at [forest_fire.py](forest_fire.py).
 
 ## Feature Engineering
 

@@ -171,7 +171,7 @@ train_network(model,optimizer,criterion,X_train,y_train,X_test,y_test,num_epochs
 ```
 
 # Results
-So in the end how did I do? At first I was experiencing horrible test loss and extensive overfitting. After putting the code in Claude and getting some feedback I was finally able to get the results to the following:
+So in the end how did I do? At first I was experiencing horrible test loss and extensive overfitting. Eventually I was finally able to get the results to the following:
 
 ```
 $ python forest_fire.py 
